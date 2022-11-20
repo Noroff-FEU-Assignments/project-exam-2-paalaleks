@@ -1,0 +1,91 @@
+@layer base {
+  :root {
+    --font-0: "platelet";
+    --font-1: "Nanum Pen Script";
+    --font-2: "Petit Formal Script";
+    --font-3: "Taprom";
+    --font-4: "Yomogi";
+    --font-5: "skippy-sharp";
+    --font-6: "Caveat";
+    --font-7: "Gochi Hand";
+    --font-8: "Iceland'";
+    --font-9: "Mansalva";
+    --font-10: "Reenie Beanie";
+    --font-11: "Patrick Hand SC";
+    --font-12: "Just Me Again Down Here";
+
+    --heading: var(--font-0);
+    --body: "futura-pt";
+    --antique-white: #f4e6d2;
+  }
+
+  body {
+    @apply text-[#F6F8FF];
+    @apply bg-center;
+    @apply bg-top;
+    font-family: var(--body);
+  }
+
+  .input {
+    @apply text-darkblue-1;
+    @apply bg-white;
+  }
+  .select {
+    @apply text-darkblue-1;
+    @apply bg-white;
+  }
+  .textarea {
+    @apply textarea-primary;
+    @apply text-darkblue-1;
+    @apply bg-white;
+  }
+
+  h1 {
+    @apply text-xl;
+    font-family: var(--heading);
+  }
+  h2 {
+    @apply text-accent;
+    @apply text-xl;
+    font-family: var(--heading);
+  }
+  h3 {
+    @apply text-accent;
+    @apply text-2xl;
+    font-family: var(--heading);
+  }
+
+  p {
+    @apply text-base;
+    @apply xs:text-lg;
+  }
+
+  .body-padding {
+    @apply px-3;
+    @apply sm:px-10;
+  }
+
+  .navLink,
+  .activeNavLink {
+    @apply uppercase;
+    @apply font-futuraPtBold;
+    @apply text-sm;
+    @apply cursor-pointer;
+    @apply opacity-30;
+    @apply hover:opacity-100;
+    @apply pl-2;
+    @apply pr-2;
+    @apply py-1;
+    @apply sm:py-0;
+    @apply first:pl-0;
+    @apply last:pl-0;
+    @apply xs:last:pl-2;
+  }
+  .activeNavLink {
+    @apply opacity-100;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
