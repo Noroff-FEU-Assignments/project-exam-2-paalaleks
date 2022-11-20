@@ -5,7 +5,7 @@ import PlanleggerSteg2 from "../components/PlanleggerSteg2";
 import PlanleggerSteg3 from "../components/PlanleggerSteg3";
 import PlanleggerSteg4 from "../components/PlanleggerSteg4";
 
-const solcelleplanlegger = () => {
+const Solcelleplanlegger = () => {
   const submit = () => {
     console.log(formData);
   };
@@ -21,25 +21,28 @@ const solcelleplanlegger = () => {
 
   const componentList = [
     <PlanleggerSteg1
+      key={1}
       page={page}
       setPage={setPage}
       formData={formData}
       setFormData={setFormData}
     />,
     <PlanleggerSteg2
+      key={2}
       page={page}
       setPage={setPage}
       formData={formData}
       setFormData={setFormData}
     />,
     <PlanleggerSteg3
+      key={3}
       page={page}
       setPage={setPage}
       formData={formData}
       setFormData={setFormData}
       submit={submit}
     />,
-    <PlanleggerSteg4 page={page} setPage={setPage} />,
+    <PlanleggerSteg4 key={4} page={page} setPage={setPage} />,
   ];
 
   return (
@@ -53,4 +56,4 @@ const solcelleplanlegger = () => {
   );
 };
 
-export default solcelleplanlegger;
+export default Solcelleplanlegger;
