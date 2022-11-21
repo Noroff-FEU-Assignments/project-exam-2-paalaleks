@@ -3,7 +3,7 @@ const PlanleggerSteg2 = ({ page, setPage }) => {
     <div>
       <div className="my-8">
         <h1 className=" leading-[32px] h-[32px] text-accent">
-          Informasjon strømnettet
+          Informasjon om strømnettet
         </h1>
         <p className="text-primary h-[75px]">
           <br />

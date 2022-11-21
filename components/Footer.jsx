@@ -8,8 +8,9 @@ const Footer = () => {
           Forskrift om elektrisk utstyr § 21 pålegger oss å informere om at
           installasjonsmateriell ment for å kunne inngå i et fast elektrisk
           anlegg kun kan installeres av en registrert installasjonsvirksomhet.
+          <br />
+          <span className="">I sammarbeid med:</span>
         </p>
-        <h1 className="mt-1">I sammarbeid med:</h1>
       </div>
       <div className="flex flex-wrap justify-around grayscale mx-auto w-full max-w-4xl">
         <div className="p-2">
@@ -29,16 +30,21 @@ const Footer = () => {
       <div className="flex justify-center">
         <div className="mx-auto w-full max-w-4xl flex items-center">
           <div className="max-w-[190px]">
-            <img src="/logo-dark.svg" alt="Pro solar logo" />
+            <Image
+              src="/logo-dark.svg"
+              alt="Pro solar logo"
+              height={221}
+              width={545}
+            />
           </div>
           <div className="ml-4">
             <a className="link link-hover mr-2">Kontakt</a>
             <a className="link link-hover mr-2">Blog</a>
-            <a className="link link-hover mr-2">Solcelleplanlegger</a>
+            <a className="link link-hover">Solcelleplanlegger</a>
             <br />
             <a className="link link-hover">Jobb hos oss </a>
             <br />
-            <a className="link link-hover">epost@epost.com</a>
+            <a className="link link-hover">post@prosolar.no</a>
           </div>
         </div>
       </div>

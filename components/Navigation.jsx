@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navigation = () => {
   const router = useRouter();
@@ -9,16 +10,15 @@ const Navigation = () => {
       <div className="pt-4 max-w-4xl relative flex flex-col justify-center w-full min-h-[185px] mx-auto">
         <div className="flex flex-col items-center sm:flex-row">
           <div className="max-w-[225px]">
-            <img src="/logo.png" alt="Pro solar logo" />
+            <Image
+              src="/logo.png"
+              alt="Pro solar logo"
+              height={306}
+              width={754}
+            />
           </div>
-          <h1
-            className="
-          mt-4 sm:mt-0
-          mb-2 sm:mb-0
-          pl-4
-          max-w-xl min-w-[459px]"
-          >
-            " Taket ditt er en verdifull ressurs du bør forvalte godt. Prosolar
+          <h1 className="mt-4 sm:mt-0 mb-2 sm:mb-0 pl-4 max-w-xl min-w-[459px]">
+            Taket ditt er en verdifull ressurs du bør forvalte godt. Prosolar
             bygger og drifter dine solcelleanlegg i samarbeid med våre partnere.
           </h1>
         </div>

@@ -67,9 +67,8 @@
 
   .navLink,
   .activeNavLink {
-    @apply uppercase;
-    @apply font-futuraPtBold;
-    @apply text-sm;
+    @apply font-futuraPt;
+    @apply text-lg;
     @apply cursor-pointer;
     @apply opacity-30;
     @apply hover:opacity-100;
