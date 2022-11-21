@@ -3,7 +3,6 @@ import Layout from "../components/Layout";
 import PlanleggerSteg1 from "../components/PlanleggerSteg1";
 import PlanleggerSteg2 from "../components/PlanleggerSteg2";
 import PlanleggerSteg3 from "../components/PlanleggerSteg3";
-import PlanleggerSteg4 from "../components/PlanleggerSteg4";
 
 const Solcelleplanlegger = () => {
   const submit = () => {
@@ -42,7 +41,6 @@ const Solcelleplanlegger = () => {
       setFormData={setFormData}
       submit={submit}
     />,
-    <PlanleggerSteg4 key={4} page={page} setPage={setPage} />,
   ];
 
   return (
