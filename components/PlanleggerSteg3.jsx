@@ -17,7 +17,7 @@ const PlanleggerSteg3 = ({ page, setPage, formData, setFormData, submit }) => {
           <span className="">demo text</span>
         </p> */}
       </div>
-      <div className="mx-auto mb-8 ">
+      <div className="mx-auto mb-8 max">
         <label className="label" htmlFor="navn">
           <span className="label-text text-accent text-md">Navn</span>
         </label>

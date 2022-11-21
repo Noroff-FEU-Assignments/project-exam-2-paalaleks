@@ -8,10 +8,10 @@ const Footer = () => {
       </p>
       <div className="flex items-center grayscale mx-auto w-full py-2 max-w-4xl">
         <h1 className="mr-4">I sammarbeid med:</h1>
-        <img src="/overland.webp" alt="" className=" max-h-7 mx-2" />
+        <img src="/overland.png" alt="" className=" max-h-7 mx-2" />
         <img src="/Senergia.webp" alt="" className=" max-h-7 mx-2" />
         <img src="/Solar.webp" alt="" className=" max-h-7 mx-2" />
-        <img src="/Brevik-elektro.webp" alt="" className=" max-h-7 mx-2" />
+        <img src="/Brevik-elektro.png" alt="" className=" max-h-7 mx-2" />
       </div>
 
       <div className="body-padding h-48 flex justify-center">
