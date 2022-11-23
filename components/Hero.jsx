@@ -1,13 +1,16 @@
 const Hero = () => {
   return (
-    <div>
-      <div
-        className="bg-[url('/solar-guy.png')] h-[400px] max-w-[1100px] bg-cover w-full mx-auto 
-      rounded-3xl  outline outline-accent outline-8 mb-8 mt-2"
-      />
-      <div>
+    <>
+      <div className="body-padding">
+        <div
+          className="bg-[url('/solar-guy.png')] h-[400px] max-w-[1100px] bg-cover w-full mx-auto 
+      rounded-3xl  outline outline-accent outline-8 mb-8 mt-2 "
+        />
+      </div>
+
+      <div className="body-padding">
         <div className="mx-auto max-w-4xl">
-          <h3>Fra oljeindustri til grønn solenergi</h3>
+          <h2 className=" text-2xl">Fra oljeindustri til grønn solenergi</h2>
           <p>
             Solenergi er det nyeste, reneste og mye rimeligere alternativet til
             olje og naturgass. Det blir distribuert i massiv skala over hele
@@ -36,7 +39,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

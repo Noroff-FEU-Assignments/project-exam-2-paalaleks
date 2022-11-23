@@ -1,23 +1,18 @@
 import { useRouter } from "next/router";
 
-const PlanleggerSteg3 = ({ page, setPage, formData, setFormData, submit }) => {
+const PlanleggerSteg3 = ({ page, setPage, formData, setFormData }) => {
   const router = useRouter();
   const redirectHome = () => {
     router.push("/");
   };
 
+  const submit = () => {
+    console.log(formData);
+  };
+
   return (
     <>
-      <div className="max-w-md w-full mx-auto my-8">
-        <h1 className=" leading-[32px] h-[32px] text-accent">
-          Kontaktinformasjon
-        </h1>
-        {/* <p className="text-primary h-[75px]">
-          <br />
-          <span className="">demo text</span>
-        </p> */}
-      </div>
-      <div className="mx-auto mb-8 max">
+      <div className="mx-auto my-8">
         <label className="label" htmlFor="navn">
           <span className="label-text text-accent text-md">Navn</span>
         </label>
@@ -86,7 +81,7 @@ const PlanleggerSteg3 = ({ page, setPage, formData, setFormData, submit }) => {
         </div>
       </div>
 
-      <div className="my-8 max-w-md mx-auto w-full leading-[48px]">
+      <div className="my-8 mx-auto w-full flex justify-center leading-[48px]">
         <button
           className="btn btn-accent w-36 capitalize mr-1"
           onClick={() => {
@@ -96,6 +91,7 @@ const PlanleggerSteg3 = ({ page, setPage, formData, setFormData, submit }) => {
           Forige
         </button>
         <button
+          type="submit"
           className="btn btn-accent w-36 capitalize ml-1"
           onClick={() => {
             submit(), redirectHome();
@@ -103,7 +99,7 @@ const PlanleggerSteg3 = ({ page, setPage, formData, setFormData, submit }) => {
         >
           Ferdig
         </button>
-        <span className="ml-4">Steg 3 av 3</span>
+        <span className="ml-4">Kontaktinformasjon – Steg 3 av 3</span>
       </div>
     </>
   );

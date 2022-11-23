@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="absolute bottom-0 bg-dark-footer text-primary w-full body-padding h-[340px] flex flex-col justify-evenly">
+    <footer className="absolute bottom-0 bg-dark-footer text-primary w-full body-padding md:h-[340px] h-[600px]  flex flex-col justify-evenly">
       <div className=" max-w-4xl mx-auto">
         <p>
           Forskrift om elektrisk utstyr § 21 pålegger oss å informere om at

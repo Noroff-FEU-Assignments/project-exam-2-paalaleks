@@ -1,16 +1,10 @@
 const PlanleggerSteg2 = ({ page, setPage }) => {
   return (
     <div>
-      <div className="my-8">
-        <h1 className=" leading-[32px] h-[32px] text-accent">
-          Informasjon om strømnettet
-        </h1>
-        <p className="text-primary h-[75px]">
-          <br />
-          <span className="">demo text</span>
-        </p>
-      </div>
-      <div className="my-8 max-w-md mx-auto w-full leading-[48px]">
+      <p className="text-primary h-[75px] mt-8">
+        <span className="">demo text</span>
+      </p>
+      <div className="my-8 flex justify-center mx-auto w-full leading-[48px]">
         <button
           className="btn btn-accent w-36 capitalize mr-1"
           onClick={() => {
@@ -27,7 +21,7 @@ const PlanleggerSteg2 = ({ page, setPage }) => {
         >
           Neste
         </button>
-        <span className="ml-4">Steg 2 av 3</span>
+        <span className="ml-4">Strømnettet – Steg 3 av 3</span>
       </div>
     </div>
   );
