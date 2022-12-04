@@ -13,6 +13,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        "my-cyan": "#074d51",
         "green-5": "#d7f0e4",
         "green-1": "#183e46",
         "green-2": "#14353c",
@@ -33,15 +34,23 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          primary: "#e5ebf5",
-          secondary: "#eddd6a",
+          primary: "#F6F8FF",
+
+          secondary: "#D926A9",
+
           accent: "#54D38B",
-          neutral: "#14191F",
-          "base-100": "#F6F8FF",
-          info: "#86A0EE",
-          success: "#17AB86",
-          warning: "#E19119",
-          error: "#FC5D5A",
+
+          neutral: "#F6F8FF",
+
+          "base-100": "#14191f",
+
+          info: "#3ABFF8",
+
+          success: "#36D399",
+
+          warning: "#FBBD23",
+
+          error: "#F87272",
         },
       },
     ],

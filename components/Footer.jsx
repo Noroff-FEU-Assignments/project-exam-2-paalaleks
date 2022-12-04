@@ -39,12 +39,10 @@ const Footer = () => {
           </div>
           <div className="ml-4">
             <a className="link link-hover mr-2">Kontakt</a>
+            <br />
             <a className="link link-hover mr-2">Blog</a>
+            <br />
             <a className="link link-hover">Solcelleplanlegger</a>
-            <br />
-            <a className="link link-hover">Jobb hos oss </a>
-            <br />
-            <a className="link link-hover">post@prosolar.no</a>
           </div>
         </div>
       </div>

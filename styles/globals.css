@@ -25,6 +25,9 @@
     @apply bg-top;
     font-family: var(--body);
   }
+  .btn {
+    @apply capitalize !important;
+  }
 
   .input {
     @apply text-darkblue-1;
@@ -63,6 +66,10 @@
   .body-padding {
     @apply px-3;
     @apply sm:px-10;
+  }
+  .content-padding {
+    @apply py-4;
+    @apply md:py-0;
   }
 
   .navLink,
