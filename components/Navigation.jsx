@@ -25,7 +25,7 @@ const Navigation = () => {
     <nav className="body-padding">
       <div className="max-w-4xl relative flex flex-col justify-center w-full mx-auto py-5">
         <div className="flex flex-col items-center md:flex-row">
-          <div className="max-w-[230px]">
+          <div className="max-w-[300px]">
             <Image
               src="/logo.png"
               alt="Pro solar logo"
