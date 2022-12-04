@@ -1,10 +1,9 @@
 import AdminLayout from "../../components/AdminLayout.jsx";
 import BlogCards from "../../components/BlogCards.jsx";
 import AdminModal from "../../components/AdminModal.jsx";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { getTokenFromLocalCookie, unsetToken } from "../../lib/auth";
 import { BiPowerOff } from "react-icons/bi";
-import axios from "axios";
 import { BiCaretDown, BiCaretRight, BiCheck } from "react-icons/bi";
 import { useRouter } from "next/router.js";
 
@@ -18,7 +17,6 @@ const Index = ({ blogs }) => {
   const [textarea, setTextarea] = useState("");
   const [tittel, setTittel] = useState("");
   const [slug, setSlug] = useState("");
-  const [imageId, setImageId] = useState("");
 
   const getJwt = getTokenFromLocalCookie();
   const router = useRouter();
@@ -166,12 +164,7 @@ const Index = ({ blogs }) => {
 
                   <div className="flex justify-between">
                     <div className=" rounded-lg flex flex-col mt-4">
-                      <input
-                        onChange={uploadImage}
-                        className="my-4"
-                        type="file"
-                        name="headerImage"
-                      />
+                      <input className="my-4" type="file" name="headerImage" />
                     </div>
 
                     <button type="submit" className="btn btn-accent mt-auto ">
